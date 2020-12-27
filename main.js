@@ -1,0 +1,1 @@
+startGame(6, 7);
