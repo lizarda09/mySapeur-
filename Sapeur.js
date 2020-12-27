@@ -20,7 +20,10 @@ function startGame(size, bomb_count){
       $('button').each(function (){}).click(function (){
           for(let i = 0; i < bombArr.length; i++){
               if($(this).attr('id')===bombArr[i]){
-                  $(this).css('background-color', 'red');
+                  //$(this).css('background-color', 'red');
+                  //let $img = $('<img>').attr('src', 'images/bomb.png');
+                  //$img.appendTo($(this));
+                  $(this).attr('class', 'bomb');
               }
           }
           $(this).attr('disabled', true);
