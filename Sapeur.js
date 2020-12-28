@@ -24,11 +24,16 @@ function startGame(size, bomb_count){
                   //let $img = $('<img>').attr('src', 'images/bomb.png');
                   //$img.appendTo($(this));
                   $(this).attr('class', 'bomb');
+                  $('<h2>')
+                      .text('You lose')
+                      .appendTo('body');
               }
           }
           $(this).attr('disabled', true);
       });
 
-
 }
 
+$("#reset").click(function (){
+    startGame(document.getElementById("size").value, document.getElementById("bombs").value);
+})

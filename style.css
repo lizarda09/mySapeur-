@@ -5,3 +5,7 @@ button {
 .bomb {
     background: url("images/bomb.png") no-repeat center;
 }
+
+.field{
+    padding: 20px;
+}
